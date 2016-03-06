@@ -1,22 +1,22 @@
-# unique-random [![Build Status](https://travis-ci.org/sindresorhus/unique-random.svg?branch=master)](https://travis-ci.org/sindresorhus/unique-random)
+# unique-random-at-depth [![Build Status](https://travis-ci.org/sindresorhus/unique-random.svg?branch=master)](https://travis-ci.org/sindresorhus/unique-random)
 
-> Generate random numbers that are consecutively unique
+> Generate random numbers that are consecutively unique relative to a provided call depth.
 
-Useful for things like slideshows where you don't want to have the same slide twice in a row.
+Useful for things like slideshows where you don't want to have the same slide `n` times in a row.
 
 
 ## Install
 
 ```
-$ npm install --save unique-random
+$ npm install --save unique-random-at-depth
 ```
 
 
 ## Usage
 
 ```js
-var uniqueRandom = require('unique-random');
-var rand = uniqueRandom(1, 10);
+var uniqueRandom = require('unique-random-at-depth');
+var rand = uniqueRandom(1, 10, 3);
 
 console.log(rand(), rand(), rand());
 //=> 5 2 6
@@ -25,13 +25,15 @@ console.log(rand(), rand(), rand());
 
 ## API
 
-### uniqueRandom(min, max)
+### uniqueRandomAtDepth(min, max, [depth])
 
-Returns a function that when called will return a random number that's never the same as the previous.
+Returns a function that when called will return a random number that's never the same as the previous. If `depth` is provided it will ensure that the random is unique relative to the last n results. So if you pass in `5` it will ensure that
+the return value is unique relative to the last 5 results.
 
 
 ## Related
 
+- [unique-random](https://github.com/sindresorhus/unique-random) - Source repository. Provides the same functionality without the depth option.
 - [unique-random-array](https://github.com/sindresorhus/unique-random-array) - Get consecutively unique elements from an array
 - [random-int](https://github.com/sindresorhus/random-int) - Generate a random integer
 - [random-float](https://github.com/sindresorhus/random-float) - Generate a random float
@@ -43,3 +45,4 @@ Returns a function that when called will return a random number that's never the
 ## License
 
 MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © Brandon Dail
