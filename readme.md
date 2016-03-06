@@ -1,4 +1,4 @@
-# unique-random-at-depth [![Build Status](https://travis-ci.org/sindresorhus/unique-random.svg?branch=master)](https://travis-ci.org/sindresorhus/unique-random)
+# unique-random-at-depth [![Build Status](https://travis-ci.org/Aweary/unique-random-at-depth.svg?branch=master)](https://travis-ci.org/Aweary/unique-random-at-depth)
 
 > Generate random numbers that are consecutively unique relative to a provided call depth.
 
