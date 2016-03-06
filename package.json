@@ -1,10 +1,11 @@
 {
-  "name": "unique-random",
+  "name": "unique-random-at-depth",
   "version": "1.0.0",
-  "description": "Generate random numbers that are consecutively unique",
+  "description": "Generate random numbers that are consecutively unique at a provided depth",
   "keywords": [
     "unique",
     "uniq",
+    "depth",
     "random",
     "rand",
     "number",
@@ -14,14 +15,13 @@
   ],
   "license": "MIT",
   "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
+    "name": "Brandon Dail",
+    "email": "Kierkegaurd@gmail.com"
   },
   "files": [
     "index.js"
   ],
-  "repository": "sindresorhus/unique-random",
+  "repository": "aweary/unique-random-at-depth",
   "scripts": {
     "test": "mocha"
   },
