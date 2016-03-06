@@ -26,6 +26,7 @@
     "test": "mocha"
   },
   "devDependencies": {
+    "lodash.uniq": "^4.2.0",
     "mocha": "*"
   },
   "engines": {
