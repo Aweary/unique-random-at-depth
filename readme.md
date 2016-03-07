@@ -2,7 +2,7 @@
 
 > Generate random numbers that are consecutively unique relative to a provided call depth.
 
-Useful for things like slideshows where you don't want to have the same slide `n` times in a row.
+Useful for things like slideshows where you don't want to have the same slide `n` times in a row. Based on [unique-random](https://github.com/sindresorhus/unique-random)
 
 
 ## Install
